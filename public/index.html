@@ -8,78 +8,41 @@
       name="description"
       content="Web site created using create-snowpack-app"
     />
-    <!--
-      Snowpack will replace %PUBLIC_URL% with the value you have for `baseUrl` in `snowpack.config.js`.
-      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
-
-      More about config options:
-      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
-    -->
     <link
       rel="stylesheet"
       type="text/css"
       href="%PUBLIC_URL%/_dist_/index.css"
     />
-    <title>Snowpack & Tailwind App</title>
+    <title>Games Javascript</title>
   </head>
   <body>
-    <!--
-      This HTML file is a template.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-
-      Start modyfing from here.
-    -->
-    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center">
-        <p
-          class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
-        >
-          Snowpack
-        </p>
-        <h3
-          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-        >
-          Tailwind template
-        </h3>
-        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
-          Use this template to build awesome websites using Snowpack and
-          Tailwind. It also includes Prettier and automatic publish to GitHub
-          pages using GitHub Actions. Learn more:
-        </p>
-        <ul
-          class="text-xl leading-7 sm:flex justify-around sm:max-w-2xl sm:mx-auto mt-10"
-        >
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a href="https://snowpack.dev" target="_blank">snowpack.dev</a>
-          </li>
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a href="https://tailwindcss.com" target="_blank"
-              >tailwindcss.com</a
-            >
-          </li>
-          <li class="my-4 p-4 px-6 bg-gray-300 hover:bg-gray-500">
-            <a
-              href="https://docs.github.com/en/free-pro-team@latest/actions"
-              target="_blank"
-              >GitHub Actions</a
-            >
-          </li>
-        </ul>
-        <p class="mt-14 text-xl leading-7 text-gray-500">Start using it:</p>
-        <div class="my-5 bg-gray-800 p-5 text-white">
-          <code>
-            npx create-snowpack-app my-app --template snowpack-template-tailwind
-          </code>
-        </div>
-        <p class="mt-16 text-xl leading-7 text-gray-500 underline">
-          <a href="https://github.com/jonalvarezz/snowpack-template-tailwind"
-            >See on GitHub</a
-          >
-        </p>
+  <div class="game-grid" style="display: flex; justify-content: center;">
+    <div class="memory-game">
+      <div class="memory-game__container">
+        <h3>Score: <span id="result"></span></h3>
+        <div class="grid"></div>
       </div>
-    </div>
+    </div> 
+    <div style="height: 100%; border-left: 5px solid black;"></div>
+    <div class="whole-a-mole" style="border: 1px solid blue;">
+      <div class="whole-a-mole__container">
+        <h1 style="text-align: center; font-weight: bold;">Whack a mole!</h1>
+        <h2 style="color: blue; font-weight: bold;">Your score: <span id="score"></span>0</h2>
+        <h2 style="color: orangered; font-weight: bold;">seconf-left: <span class="" id="time-left">60</span></h2>
+        <div class="grid">
+          <div class="square" id="1"></div>
+          <div class="square" id="2"></div>
+          <div class="square" id="3"></div>
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+        </div>
+      </div>
+    </div>   </div> 
+   
 
     <!-- Add more scripts here -->
     <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
