@@ -1,0 +1,10 @@
+@import "../_snowpack/pkg/tailwindcss/dist/base.css";
+@import "../_snowpack/pkg/tailwindcss/dist/components.css";
+@import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 300px;
+}
