@@ -2,9 +2,7 @@
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
 
-.grid{
-  display: flex;
-  flex-wrap: wrap;
-  width: 500px;
-  height: 300px;
+body{
+  width: 100vw;
+  height: 100vh;
 }
