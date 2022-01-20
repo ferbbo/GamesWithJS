@@ -12,15 +12,18 @@
   <title>Game 1 | Memory game</title>
   <style>
     .grid{
+      display: flex;
+      flex-wrap: wrap;
       margin: 0 auto;
-      width: 70vw;
+      width: 612px;
     }
   </style>
 </head>
 <body>
+  <div class="m-4"><a href="../index.html">Ir a Menu</a></div>
   <div class="memory-game">
     <div class="memory-game__container">
-      <h3>Score: <span id="result"></span></h3>
+      <h3 class="m-4">Score: <span id="result"></span></h3>
       <div class="grid"></div>
     </div>
   </div> 
