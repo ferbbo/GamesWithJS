@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="/_dist_/index.css"
+/>
+  <title>Game 2 | Wack mole</title>
+  <style>
+  .grid {
+    margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 532px;
+  height: 532px;
+}
+.square{ 
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+.mole {
+  background-image: url('../images/mole.jpg');
+  background-size: cover; 
+}
+  </style>
+</head>
+<body>
+  <div class="whole-a-mole" style="border: 1px solid blue;">
+    <div class="whole-a-mole__container">
+      <h1 style="text-align: center; font-weight: bold;">Whack a mole!</h1>
+      <h2 style="color: blue; font-weight: bold;">Your score: <span id="score"></span>0</h2>
+      <h2 style="color: orangered; font-weight: bold;">seconf-left: <span class="" id="time-left">60</span></h2>
+      <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square " id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+      </div>
+    </div>
+  </div>  
+  <script type="module" src="/_dist_/wack-mole.js"></script>
+</body>
+</html>
