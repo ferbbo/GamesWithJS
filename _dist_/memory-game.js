@@ -61,7 +61,7 @@ function createdBoard(){
   cardArray.sort(() => 0.5 - Math.random());
   const cards = cardArray.map((item, index) => {
     let card = document.createElement('img');
-    card.setAttribute('src', 'images/blank.png');
+    card.setAttribute('src', '../images/blank.png');
     card.setAttribute('data-id', index);
     card.style.border = "1px solid black";
     card.addEventListener('click', flipCard)
@@ -79,12 +79,12 @@ function checkForMatch(){
     })
     if(isMatching){
       alert('You found a match')
-      cards.forEach((card) => { card.src = "images/white.png"})
+      cards.forEach((card) => { card.src = "../images/white.png"})
       cardsWon.push(cardChosenIds)
 
     }else {
       alert("Sorry, keep trying")
-      cards.forEach((card) => { card.src = "images/blank.png"})
+      cards.forEach((card) => { card.src = "../images/blank.png"})
     }
     cardChosen = []
     cardChosenIds = []
@@ -101,7 +101,7 @@ function flipCard(){
   const cardId = this.getAttribute("data-id");
   cardChosen.push(cardArray[cardId].name);
   cardChosenIds.push(cardId);
-  this.setAttribute("src", cardArray[cardId].img)
+  this.setAttribute("src", `../${cardArray[cardId].img}`)
   if(cardChosenIds.length === 2) {
     setTimeout(checkForMatch, 500)
   }
